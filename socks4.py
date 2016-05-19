@@ -116,7 +116,7 @@ class MSock4(SOCKSv4):
         csinfo = '%s:%s --> %s:%s' % getCSInfo(self)
         csinfo += ' len: %s' % len(data)
         print colored(csinfo, 'red')
-        print colored(hexdump(data), 'blue')
+        print colored(hexdump(data), 'green')
         logdata('%s\n%s' % (csinfo, hexdump(data)))
 
         return SOCKSv4.dataReceived(self, data)
